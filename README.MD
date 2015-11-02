@@ -1,5 +1,5 @@
 #React sample mailing tool
-I made this by a customer requirement, using (React)[https://github.com/facebook/react], (flux)[https://github.com/facebook/flux] and (react-router)[https://github.com/rackt/react-router]
+I made this by a customer requirement, using [React](https://github.com/facebook/react), [flux](https://github.com/facebook/flux) and [react-router](https://github.com/rackt/react-router)
 The goal is the automatization of a customer service after-sale email.
 
 They can input the destination emails, about 8 addresses.
