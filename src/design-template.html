@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tools | Wandering Owl</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--link rel="stylesheet" href="style/css/bootstrap.min.css"-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/css/main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="panel panel-default">
+            <div class="panel-heading">Email Tool</div>
+            <div class="panel-body">
+                <div class="col-md-6">
+                    <!-- emails component -->
+                    <div class="form-group">
+                        <label for="inputEmails">Email address</label>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="inputEmails" placeholder="Type or paste comma separated addresses" />
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button">Add</button>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <div class="input-group">
+                                            <span class=" EmailManager-emailItem-selectableRow">valid@mail.com</span>
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-default EmailManager-emailItem-removeButton" type="button">
+                                                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="input-group">
+                                            <span class=" EmailManager-emailItem-selectableRow EmailManager-emailItem-error">invalid.com</span>
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-default EmailManager-emailItem-removeButton" type="button">
+                                                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="input-group">
+                                            <span class=" EmailManager-emailItem-selectableRow">valid_and_long@email_address.com</span>
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-default EmailManager-emailItem-removeButton" type="button">
+                                                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </li>
+
+                                    <li class="list-group-item">
+                                        <div class="input-group">
+                                            <span class=" EmailManager-emailItem-selectableRow">also.valid@email.com.ar</span>
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-default EmailManager-emailItem-removeButton" type="button">
+                                                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- dropbox url -->
+                    <div class="form-group">
+                        <label for="inputUrl">Dropbox URL</label>
+                        <input type="url" class="form-control" id="inputUrl" placeholder="dropbox url" />
+                    </div>
+                    <!-- comments -->
+                    <div class="form-group">
+                        <label for="inputText">Additional text (optional)</label>
+                        <textarea type="url" class="form-control" id="inputText" placeholder="Type additional text to include"></textarea>
+                    </div>
+
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="inputUrl">Preview</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="panel panel-default">
+            <div class="panel-heading">Authorized personnel only</div>
+            <form class="panel-body" name="loginForm">
+                <div class="form-group">
+                    <input class="form-control" type="password" name="pass" placeholder="Type the access code" required />
+                </div>
+                <input class="btn btn-default" type="submit" value="Logg in"
+                    ng-disabled="loginForm.$invalid"
+                    ng-click="login()" />
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

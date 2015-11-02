@@ -1,0 +1,42 @@
+body {
+    padding: 10px;
+}
+
+.EmailManager-emailItem {
+
+}
+
+.EmailManager-emailItem-error {
+    color: red;
+}
+
+.EmailManager-emailItem-selectableRow {
+    cursor: pointer;
+    display: table-cell;
+    padding: 6px;
+    padding-left: 30px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.EmailManager-emailItem-selectableRow:hover {
+    background-color: #ccc;
+}
+
+.EmailManager-emailItem-selectableRow:hover:before {
+    font-family: 'Glyphicons Halflings';
+    content: "\270f";
+    margin-left: -22px;
+    padding-right: 9px;
+    font-size: 13px;
+}
+
+.EmailManager-emailItem-removeButton.btn {
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    border: 0;
+}
+
+.list-group-item {
+    padding: 0;
+}
