@@ -35,7 +35,6 @@ class App extends Component {
     }
 
     render() {
-        console.log(this.state.isLoggedIn);
         if( this.state.isLoggedIn ){
             return (this.renderApp());
         }else{
