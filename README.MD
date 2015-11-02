@@ -6,9 +6,9 @@ They can input the destination emails, about 8 addresses.
 The DropBox URL where assets for customers are stored and an optional text to add in the email.
 
 ***the tool has a login page (hacked for this sample)***
-
 ***Email template is not included.***
-[Try the demo]()
+
+[Try the demo](http://cosmitar.github.io/react-sample-tool/)
 
 ##License
 MIT
